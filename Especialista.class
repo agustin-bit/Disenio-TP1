@@ -1,0 +1,61 @@
+package tp1.disenio;
+
+
+import java.io.Serializable;
+import java.util.Date;
+
+
+public class Especialista implements Serializable {
+    
+    //Atributos
+    private int nroLegajoEspecialista;
+    private int cuitEspecialista;
+    private String nombreApellidoEspecialista;
+    private Date fechaHoraFinVigenciaEspecialista;
+    
+    //Constructores
+    public Especialista() {
+    }
+
+    public Especialista(int nroLegajoEspecialista, int cuitEspecialista, String nombreApellidoEspecialista, Date fechaHoraFinVigenciaEspecialista) {
+        this.nroLegajoEspecialista = nroLegajoEspecialista;
+        this.cuitEspecialista = cuitEspecialista;
+        this.nombreApellidoEspecialista = nombreApellidoEspecialista;
+        this.fechaHoraFinVigenciaEspecialista = fechaHoraFinVigenciaEspecialista;
+    }
+
+    //Set/Get
+    public int getNroLegajoEspecialista() {
+        return nroLegajoEspecialista;
+    }
+
+    public void setNroLegajoEspecialista(int nroLegajoEspecialista) {
+        this.nroLegajoEspecialista = nroLegajoEspecialista;
+    }
+
+    public int getCuitEspecialista() {
+        return cuitEspecialista;
+    }
+
+    public void setCuitEspecialista(int cuitEspecialista) {
+        this.cuitEspecialista = cuitEspecialista;
+    }
+
+    public String getNombreApellidoEspecialista() {
+        return nombreApellidoEspecialista;
+    }
+
+    public void setNombreApellidoEspecialista(String nombreApellidoEspecialista) {
+        this.nombreApellidoEspecialista = nombreApellidoEspecialista;
+    }
+
+    public Date getFechaHoraFinVigenciaEspecialista() {
+        return fechaHoraFinVigenciaEspecialista;
+    }
+
+    public void setFechaHoraFinVigenciaEspecialista(Date fechaHoraFinVigenciaEspecialista) {
+        this.fechaHoraFinVigenciaEspecialista = fechaHoraFinVigenciaEspecialista;
+    }
+    
+    
+}
