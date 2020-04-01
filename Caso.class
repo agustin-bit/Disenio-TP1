@@ -1,0 +1,109 @@
+
+package tp1.disenio;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Caso implements Serializable {
+    
+    //Atributos
+    private int nroCaso;
+    private Date fechaHoraFinCaso;
+    private Date fechaHoraIngresoCaso;
+    private Date fechaHoraCaducidadCaso;
+    private int numeroCliente;
+    private int numeroIteracion;
+    private String observacionCaso;
+    private ArrayList <CasoInstancia> casoInstancia = new ArrayList<>();
+    
+    //Constructores
+    public Caso() {
+    }
+
+    public Caso(int nroCaso, Date fechaHoraFinCaso, Date fechaHoraIngresoCaso, Date fechaHoraCaducidadCaso, int numeroCliente, int numeroIteracion, String observacionCaso) {
+        this.nroCaso = nroCaso;
+        this.fechaHoraFinCaso = fechaHoraFinCaso;
+        this.fechaHoraIngresoCaso = fechaHoraIngresoCaso;
+        this.fechaHoraCaducidadCaso = fechaHoraCaducidadCaso;
+        this.numeroCliente = numeroCliente;
+        this.numeroIteracion = numeroIteracion;
+        this.observacionCaso = observacionCaso;
+    }
+    
+    //Añadir/Quitar elementos al ArrayList        
+    private void addCasoInstancia (CasoInstancia casoInstancia) {
+        this.casoInstancia.add(casoInstancia);
+    }
+    
+    private void removeCasoInstancia (int index) {
+        this.casoInstancia.remove(index);
+    }
+    
+    //Set/Get
+    public int getNroCaso() {
+        return nroCaso;
+    }
+
+    public void setNroCaso(int nroCaso) {
+        this.nroCaso = nroCaso;
+    }
+
+    public Date getFechaHoraFinCaso() {
+        return fechaHoraFinCaso;
+    }
+
+    public void setFechaHoraFinCaso(Date fechaHoraFinCaso) {
+        this.fechaHoraFinCaso = fechaHoraFinCaso;
+    }
+
+    public Date getFechaHoraIngresoCaso() {
+        return fechaHoraIngresoCaso;
+    }
+
+    public void setFechaHoraIngresoCaso(Date fechaHoraIngresoCaso) {
+        this.fechaHoraIngresoCaso = fechaHoraIngresoCaso;
+    }
+
+    public Date getFechaHoraCaducidadCaso() {
+        return fechaHoraCaducidadCaso;
+    }
+
+    public void setFechaHoraCaducidadCaso(Date fechaHoraCaducidadCaso) {
+        this.fechaHoraCaducidadCaso = fechaHoraCaducidadCaso;
+    }
+
+    public int getNumeroCliente() {
+        return numeroCliente;
+    }
+
+    public void setNumeroCliente(int numeroCliente) {
+        this.numeroCliente = numeroCliente;
+    }
+
+    public int getNumeroIteracion() {
+        return numeroIteracion;
+    }
+
+    public void setNumeroIteracion(int numeroIteracion) {
+        this.numeroIteracion = numeroIteracion;
+    }
+
+    public String getObservacionCaso() {
+        return observacionCaso;
+    }
+
+    public void setObservacionCaso(String observacionCaso) {
+        this.observacionCaso = observacionCaso;
+    }
+
+    public ArrayList<CasoInstancia> getCasoInstancia() {
+        return casoInstancia;
+    }
+
+    public void setCasoInstancia(ArrayList<CasoInstancia> casoInstancia) {
+        this.casoInstancia = casoInstancia;
+    }
+      
+        
+}
